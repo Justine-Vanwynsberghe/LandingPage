@@ -5,21 +5,97 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-
-.content{
-    border: 2px solid red;
-    padding: 2rem 2rem;
-}
-
 body{
    font-family: var(--font-body); 
    color: var(--white);
    background-color: var(--violet);
-   background-image: url(./images/bg-mobile.svg);
-   background-repeat: no-repeat;     
+   background-image: url(../images/bg-mobile.svg);
+   background-repeat: no-repeat;
+   background-size: 100%;
+
+   @media (min-width: var(--mobileWidth)) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+   
+   
+   .content{
+    height: 100vh;
+    padding: 2rem 2rem;
+
+        header{
+            font-family: var(--font-heading);
+            display: flex;
+            align-items: center;
+
+            .speech-bubble-icon{
+                font-size: 1.5rem;
+                padding-right: 0.4rem;
+            }
+            
+            .title {
+                text-transform: capitalize;
+            }
+        }
+
+        .illustration-section{
+            padding: 2.5rem 0;
+        }
+
+        .info-section{
+            text-align: center;
+            padding: 0 1rem;
+
+            .info-section-text{
+                padding: 1rem 0;
+            }
+
+            .btn-register{
+                
+                font-size: 0.85rem;
+                text-decoration: none;
+                color: var(--violet);
+                background-color: var(--white);
+                padding: 0.75rem 5rem;
+                border-radius: 10rem;
+                box-shadow: 1px 5px 15px hsla(0, 0%, 0%, 0.233);
+            }
+            
+        }
+
+        .social-icons{
+            padding:2rem 0;            
+            text-align: center;
+
+            ul { 
+                padding-left: 0 !important;
+              
+                li {
+                  display: inline-block;
+                  border: 1px solid var(--white);
+                  margin: 0.2rem; // space between circles
+                  border-radius: 50%;
+                  
+                  a {
+                    color: white;
+                    display: table-cell;
+                    vertical-align: middle; 
+                    text-align: center;
+                    text-decoration: none;
+                    //to control the circle sizes
+                    height: 2rem;
+                    width: 2rem; 
+                  }
+                }
+            }
+           
+        }
+
+    }
+
 }
 
-header{
-    font-family: var(--font-heading);
-    display: flex;
-}
+
+
