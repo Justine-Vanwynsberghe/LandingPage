@@ -18,12 +18,12 @@ V- Soft Magenta: hsl(300, 69%, 71%)
 
 ### Headings
 
-- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+V- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
 - Weights: 400, 600
 
 ### Body
 
-- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+V- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
 - Weights: 400
 
 ## Icons
