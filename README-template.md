@@ -1,7 +1,3 @@
-# Frontend Mentor - Huddle landing page with single introductory section solution
-
-This is a solution to the [Huddle landing page with single introductory section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -45,6 +41,15 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
+1) Divide mobile design into sections: 
+      - header section 
+      - illustrator section
+      - info section
+      - footer section
+
+2) Added style sheet with variables from style-guid and add link in index.html.
+3) Added font awesome in index.html.
+2) Added semantic HTML5 markup.
 
 ### Built with
 

@@ -4,15 +4,15 @@
 
 The designs were created to the following widths:
 
-- Mobile: 375px
-- Desktop: 1440px
+V- Mobile: 375px
+V- Desktop: 1440px
 
 ## Colors
 
 ### Primary
 
-- Violet: hsl(257, 40%, 49%)
-- Soft Magenta: hsl(300, 69%, 71%)
+V- Violet: hsl(257, 40%, 49%)
+V- Soft Magenta: hsl(300, 69%, 71%)
 
 ## Typography
 

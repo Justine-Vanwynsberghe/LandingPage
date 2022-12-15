@@ -1,0 +1,13 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*VARIABLES*/
+:root{
+--mobileWidth: 375px;
+--desktopWidth: 1440px;
+
+--violet: #674baf;
+--softMagenta: #e882e8;
+
+}
+    
