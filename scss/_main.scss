@@ -23,7 +23,7 @@ body{
    @media (min-width: 900px) {        
         background-image: url(../images/bg-desktop.svg);   
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 90%;
         height: 100vh;
         overflow: hidden;       
     }   
@@ -33,37 +33,42 @@ body{
         padding: 2rem 2rem;  
 
         header img{            
-            max-width: 10rem;
+            max-width: 10rem; 
+
+            @media (min-width: 900px){
+                max-width: 16rem; 
+                padding-left: 4.6rem;
+            }
+            
         }
 
-        @media (min-width: 900px) {            
-            .grid-container{
-                display: grid;
-                grid-template-columns: 50% 50%; 
-                gap: 2rem;  
-                padding-top: 3rem; 
+        @media (min-width: 900px) { 
 
-                .illustration-section{
-                    flex: 1;
-                }
+                .grid-container{
+                    display: grid;                
+                    grid-template-columns: 50% 50%; 
+                    padding-top: 3rem; 
+                    gap: 2rem;
+                    padding-inline: 3rem;
+    
+                    .info-section{
+                        text-align: left;  
+  
+                        .info-section-title{
+                            font-size: 3.5rem;
+                            padding-top: 2.5rem;
+                            max-width: 20ch;
 
-                .info-section{
-                    flex:1;
-                    text-align: left;                    
-                            
-                    
-                    .info-section-title{
-                        font-size: 2.5rem;
-                        padding-right: 8rem;
-                        padding-top: 2.5rem;
+                        }
+    
+                        .info-section-text{
+                            font-size: 1.39rem;
+                            max-width: 49ch;
+                        }
                     }
-
-                    .info-section-text{
-                        font-size: 1rem;
-                    }
-                }
-            }  
+                }  
         }         
+        
         
         .illustration-section{
             padding: 2.5rem 0;
@@ -71,7 +76,7 @@ body{
 
         .info-section{
             text-align: center;
-            padding: 2rem 1rem;
+            padding: 2rem 0;
 
             .info-section-text{
                 padding: 1rem  0 2rem 0;
@@ -85,10 +90,14 @@ body{
                 padding: 0.75rem 5rem;
                 border-radius: 10rem;
                 box-shadow: 1px 5px 15px hsla(0, 0%, 0%, 0.233);
-                // &:hover{
-                //     background: $softMagenta;
-                //     color: #FFFFFF;
-                // }
+                &:hover{
+                    background: $softMagenta;
+                    color: #FFFFFF;
+                }
+
+                @media (min-width: 900px) {  
+                    padding: 0.75rem 3rem;
+                }
                 
             }
             
@@ -106,9 +115,9 @@ body{
                   border: 1px solid $white;
                   margin: 0.2rem; // space between circles
                   border-radius: 50%;
-                //   &:hover{
-                //     border-color: $softMagenta;
-                // }                 
+                  &:hover{
+                    border-color: $softMagenta;
+                }                 
                   
                   a {
                     color: white;
@@ -119,9 +128,9 @@ body{
                     //to control the circle sizes
                     height: 2rem;
                     width: 2rem;  
-                    // &:hover{
-                    //     color: $softMagenta;
-                    // }                
+                    &:hover{
+                        color: $softMagenta;
+                    }                
                   }
                 }
             }

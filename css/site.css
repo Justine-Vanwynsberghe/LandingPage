@@ -171,7 +171,7 @@ body {
   body {
     background-image: url(../images/bg-desktop.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 90%;
     height: 100vh;
     overflow: hidden;
   }
@@ -184,26 +184,30 @@ body .content header img {
   max-width: 10rem;
 }
 @media (min-width: 900px) {
+  body .content header img {
+    max-width: 16rem;
+    padding-left: 4.6rem;
+  }
+}
+@media (min-width: 900px) {
   body .content .grid-container {
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 2rem;
     padding-top: 3rem;
-  }
-  body .content .grid-container .illustration-section {
-    flex: 1;
+    gap: 2rem;
+    padding-inline: 3rem;
   }
   body .content .grid-container .info-section {
-    flex: 1;
     text-align: left;
   }
   body .content .grid-container .info-section .info-section-title {
-    font-size: 2.5rem;
-    padding-right: 8rem;
+    font-size: 3.5rem;
     padding-top: 2.5rem;
+    max-width: 20ch;
   }
   body .content .grid-container .info-section .info-section-text {
-    font-size: 1rem;
+    font-size: 1.39rem;
+    max-width: 49ch;
   }
 }
 body .content .illustration-section {
@@ -211,7 +215,7 @@ body .content .illustration-section {
 }
 body .content .info-section {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2rem 0;
 }
 body .content .info-section .info-section-text {
   padding: 1rem 0 2rem 0;
@@ -224,6 +228,15 @@ body .content .info-section .btn-register {
   padding: 0.75rem 5rem;
   border-radius: 10rem;
   box-shadow: 1px 5px 15px hsla(0deg, 0%, 0%, 0.233);
+}
+body .content .info-section .btn-register:hover {
+  background: #e882e8;
+  color: #FFFFFF;
+}
+@media (min-width: 900px) {
+  body .content .info-section .btn-register {
+    padding: 0.75rem 3rem;
+  }
 }
 body .content .social-icons {
   padding: 1rem 0;
@@ -238,6 +251,9 @@ body .content .social-icons ul li {
   margin: 0.2rem;
   border-radius: 50%;
 }
+body .content .social-icons ul li:hover {
+  border-color: #e882e8;
+}
 body .content .social-icons ul li a {
   color: white;
   display: table-cell;
@@ -246,6 +262,9 @@ body .content .social-icons ul li a {
   text-decoration: none;
   height: 2rem;
   width: 2rem;
+}
+body .content .social-icons ul li a:hover {
+  color: #e882e8;
 }
 @media (min-width: 900px) {
   body .content .social-icons {
