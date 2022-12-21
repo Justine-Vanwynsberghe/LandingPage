@@ -243,8 +243,7 @@ body .content .social-icons ul li {
   border-radius: 50%;
 }
 body .content .social-icons ul li:hover {
-  border-color: green;
-  color: green;
+  border-color: #e882e8;
 }
 body .content .social-icons ul li a {
   color: white;
@@ -256,8 +255,7 @@ body .content .social-icons ul li a {
   width: 2rem;
 }
 body .content .social-icons ul li a:hover {
-  border-color: green;
-  color: green;
+  color: #e882e8;
 }
 @media (min-width: 900px) {
   body .content .social-icons {

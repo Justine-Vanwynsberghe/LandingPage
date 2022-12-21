@@ -101,15 +101,15 @@ body{
 
             ul { 
                 padding-left: 0 !important;
-       
               
                 li {
                   display: inline-block;
                   border: 1px solid $white;
                   margin: 0.2rem; // space between circles
                   border-radius: 50%;
-       
-                  
+                  &:hover{
+                    border-color: $softMagenta;
+                }                 
                   
                   a {
                     color: white;
@@ -119,9 +119,10 @@ body{
                     text-decoration: none;
                     //to control the circle sizes
                     height: 2rem;
-                    width: 2rem; 
-    
-               
+                    width: 2rem;  
+                    &:hover{
+                        color: $softMagenta;
+                    }                
                   }
                 }
             }
