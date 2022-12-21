@@ -41,7 +41,7 @@ body{
                 display: grid;
                 grid-template-columns: 50% 50%; 
                 gap: 2rem;  
-                padding-top: 3rem;            
+                padding-top: 3rem; 
 
                 .illustration-section{
                     flex: 1;
@@ -49,8 +49,7 @@ body{
 
                 .info-section{
                     flex:1;
-                    text-align: left; 
-                    
+                    text-align: left;                    
                             
                     
                     .info-section-title{
@@ -86,10 +85,10 @@ body{
                 padding: 0.75rem 5rem;
                 border-radius: 10rem;
                 box-shadow: 1px 5px 15px hsla(0, 0%, 0%, 0.233);
-                &:hover{
-                    background: $softMagenta;
-                    color: #FFFFFF;
-                }
+                // &:hover{
+                //     background: $softMagenta;
+                //     color: #FFFFFF;
+                // }
                 
             }
             
@@ -107,9 +106,9 @@ body{
                   border: 1px solid $white;
                   margin: 0.2rem; // space between circles
                   border-radius: 50%;
-                  &:hover{
-                    border-color: $softMagenta;
-                }                 
+                //   &:hover{
+                //     border-color: $softMagenta;
+                // }                 
                   
                   a {
                     color: white;
@@ -120,9 +119,9 @@ body{
                     //to control the circle sizes
                     height: 2rem;
                     width: 2rem;  
-                    &:hover{
-                        color: $softMagenta;
-                    }                
+                    // &:hover{
+                    //     color: $softMagenta;
+                    // }                
                   }
                 }
             }

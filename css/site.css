@@ -225,10 +225,6 @@ body .content .info-section .btn-register {
   border-radius: 10rem;
   box-shadow: 1px 5px 15px hsla(0deg, 0%, 0%, 0.233);
 }
-body .content .info-section .btn-register:hover {
-  background: #e882e8;
-  color: #FFFFFF;
-}
 body .content .social-icons {
   padding: 1rem 0;
   text-align: center;
@@ -242,9 +238,6 @@ body .content .social-icons ul li {
   margin: 0.2rem;
   border-radius: 50%;
 }
-body .content .social-icons ul li:hover {
-  border-color: #e882e8;
-}
 body .content .social-icons ul li a {
   color: white;
   display: table-cell;
@@ -253,9 +246,6 @@ body .content .social-icons ul li a {
   text-decoration: none;
   height: 2rem;
   width: 2rem;
-}
-body .content .social-icons ul li a:hover {
-  color: #e882e8;
 }
 @media (min-width: 900px) {
   body .content .social-icons {
