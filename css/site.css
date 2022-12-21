@@ -187,6 +187,7 @@ body .content header img {
   body .content .flex-container {
     display: flex;
     align-items: center;
+    padding: 2rem 0;
   }
   body .content .flex-container .illustration-section {
     flex: 1;
@@ -194,6 +195,15 @@ body .content header img {
   body .content .flex-container .info-section {
     flex: 1;
     text-align: left;
+    box-sizing: border-box;
+    padding: 0 3rem 0 rem;
+  }
+  body .content .flex-container .info-section .info-section-title {
+    font-size: 2.5rem;
+    padding-right: 5rem;
+  }
+  body .content .flex-container .info-section .info-section-text {
+    font-size: 1rem;
   }
 }
 body .content .illustration-section {
@@ -236,4 +246,11 @@ body .content .social-icons ul li a {
   text-decoration: none;
   height: 2rem;
   width: 2rem;
+}
+@media (min-width: 780px) {
+  body .content .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: auto;
+  }
 }/*# sourceMappingURL=site.css.map */
