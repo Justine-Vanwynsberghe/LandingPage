@@ -1,100 +1,79 @@
-@import "_var";
 @import "_reset";
+
+$font-body: "Open Sans", sans-serif;
+$font-heading: "Poppins", sans-serif;
+$mobileWidth: 375px;
+$desktopWidth: 1440px;
+$violet: #674baf;
+$softMagenta: #e882e8;
+$white: #ffffff;
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 body{
-   font-family: var(--font-body); 
-   color: var(--white);
-   background-color: var(--violet);
+   font-family: $font-body; 
+   color: $white;
+   background-color: $violet;
    background-image: url(../images/bg-mobile.svg);
    background-repeat: no-repeat;
    background-size: 100%;
 
-   @media (min-width: 780px) {
-        .grid-container{
-            background-image: url(../images/bg-desktop.svg);   
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-        }
+
+   @media (min-width: 780px) {        
+        background-image: url(../images/bg-desktop.svg);   
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;       
     }   
    
-   .content{
-    height: 100vh;
-    padding: 2rem 2rem;
+   .content{    
+        height: 100vh;
+        padding: 2rem 2rem;  
 
-        @media (min-width: 780px) {
-            .grid-column1{
-                padding: 2rem;
+        header img{            
+            max-width: 10rem;
+        }
+
+        @media (min-width: 780px) {            
+            .flex-container{
+                display: flex;
+                align-items: center;
+                
 
                 .illustration-section{
-                    padding-top: 5rem;                  
+                    flex: 1;
                 }
-            }            
-        }   
 
-        header{
-            font-family: var(--font-heading);
-            display: flex;
-            align-items: center;
-
-            .speech-bubble-icon{
-                font-size: 1.5rem;
-                padding-right: 0.4rem;
-            }
-            
-            .title {
-                text-transform: capitalize;
-            }
-        }
+                .info-section{
+                    flex:1;
+                    text-align: left;
+                    
+                }
+            }  
+        } 
+      
 
         .illustration-section{
             padding: 2.5rem 0;
         }
 
-        @media (min-width: 780px) {
-            .grid-column-2{
-                padding-top: 13rem;
-                padding-right: 10rem;
-
-                .info-section{
-                    text-align: left;
-
-                    .info-section-title{
-                        font-size: 2rem;
-                        padding-right: 12rem;
-                    }
-    
-                    .info-section-text{
-                        padding-right: 10rem;
-                        padding-bottom: 2rem;
-                    }
-                }     
-
-             
-            }
-
-            
-        }   
+      
 
         .info-section{
             text-align: center;
-            padding: 0 1rem;
+            padding: 2rem 1rem;
 
             .info-section-text{
-                padding: 1rem 0;
+                padding: 1rem  0 2rem 0;
             }
 
-            .btn-register{
-                
+            .btn-register{                
                 font-size: 0.85rem;
                 text-decoration: none;
-                color: var(--violet);
-                background-color: var(--white);
+                color: $violet;
+                background-color: $white;
                 padding: 0.75rem 5rem;
                 border-radius: 10rem;
                 box-shadow: 1px 5px 15px hsla(0, 0%, 0%, 0.233);
@@ -103,7 +82,7 @@ body{
         }
 
         .social-icons{
-            padding:2rem 0;            
+            padding:1rem 0;            
             text-align: center;
 
             ul { 
@@ -111,7 +90,7 @@ body{
               
                 li {
                   display: inline-block;
-                  border: 1px solid var(--white);
+                  border: 1px solid $white;
                   margin: 0.2rem; // space between circles
                   border-radius: 50%;
                   
