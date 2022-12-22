@@ -163,13 +163,13 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
   background-color: #674baf;
-  background-image: url(bg-mobile.svg);
+  background-image: url("bg-mobile.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 @media (min-width: 900px) {
   body {
-    background-image: url(bg-desktop.svg);
+    background-image: url("bg-desktop.svg");
     background-repeat: no-repeat;
     background-size: 90%;
     height: 100vh;
