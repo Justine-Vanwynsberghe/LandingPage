@@ -36,7 +36,7 @@ body{
             max-width: 10rem; 
 
             @media (min-width: 900px){
-                max-width: 16rem; 
+                max-width: 18rem; 
                 padding-left: 4.6rem;
             }
             
@@ -92,11 +92,12 @@ body{
                 box-shadow: 1px 5px 15px hsla(0, 0%, 0%, 0.233);
                 &:hover{
                     background: $softMagenta;
-                    color: #FFFFFF;
+                    color: $white;
                 }
 
                 @media (min-width: 900px) {  
-                    padding: 0.75rem 3rem;
+                    font-size: 1.25rem;
+                    padding: 0.75rem 3.5rem;
                 }
                 
             }
@@ -139,6 +140,18 @@ body{
                 display: flex;
                 justify-content: flex-end;
                 padding-top: 4rem;
+                font-size: 1.75rem;
+                padding-bottom: 0;
+                padding-top: 0;
+                
+                li{
+                    height: 3rem;
+                    width: 3rem;
+                }
+
+                a{
+                    transform: translate(7px,4px);                    
+                }              
             }
            
         }

@@ -185,7 +185,7 @@ body .content header img {
 }
 @media (min-width: 900px) {
   body .content header img {
-    max-width: 16rem;
+    max-width: 18rem;
     padding-left: 4.6rem;
   }
 }
@@ -231,11 +231,12 @@ body .content .info-section .btn-register {
 }
 body .content .info-section .btn-register:hover {
   background: #e882e8;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media (min-width: 900px) {
   body .content .info-section .btn-register {
-    padding: 0.75rem 3rem;
+    font-size: 1.25rem;
+    padding: 0.75rem 3.5rem;
   }
 }
 body .content .social-icons {
@@ -271,5 +272,15 @@ body .content .social-icons ul li a:hover {
     display: flex;
     justify-content: flex-end;
     padding-top: 4rem;
+    font-size: 1.75rem;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  body .content .social-icons li {
+    height: 3rem;
+    width: 3rem;
+  }
+  body .content .social-icons a {
+    transform: translate(7px, 4px);
   }
 }/*# sourceMappingURL=site.css.map */
